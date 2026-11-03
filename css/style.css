@@ -68,7 +68,10 @@ button{font:inherit;cursor:pointer}
 .market-card{background:var(--paper);box-shadow:0 12px 35px #3d2d1a0c}
 .market-image{height:235px;position:relative;overflow:hidden}
 .market-image:before,.market-image:after{content:"";position:absolute}
-.bakery-image{background:radial-gradient(circle at 30% 55%,#d99d5b 0 8%,transparent 9%),radial-gradient(circle at 55% 48%,#9a4d2d 0 13%,transparent 14%),radial-gradient(circle at 72% 65%,#e8bd78 0 12%,transparent 13%),linear-gradient(135deg,#493124,#b57b4d 55%,#e2c79b)}
+.bakery-image{  background-image: url('/images/bakery.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;}
 .gift-image{background:radial-gradient(circle at 50% 48%,#d8b77e 0 16%,transparent 17%),radial-gradient(circle at 28% 68%,#9c3c43 0 11%,transparent 12%),radial-gradient(circle at 75% 30%,#e6d3ae 0 13%,transparent 14%),linear-gradient(135deg,#203d31,#47634a 55%,#b49b6c)}
 .flower-image{background:radial-gradient(circle at 30% 45%,#b74d4a 0 9%,transparent 10%),radial-gradient(circle at 62% 55%,#e2c27c 0 12%,transparent 13%),radial-gradient(circle at 78% 28%,#f2dfb5 0 10%,transparent 11%),linear-gradient(135deg,#3c2929,#8a5143 60%,#d1ad7b)}
 .market-image:after{inset:18px;border:1px solid #ffffff55}
