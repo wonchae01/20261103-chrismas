@@ -1,0 +1,33 @@
+/* 사전등록 페이지 전용 스타일 */
+.register-body{background:#f4eee4;min-height:100vh}
+.back-home{font-size:11px;color:var(--green);font-weight:600}
+.register-wrap{min-height:calc(100vh - 82px);display:grid;grid-template-columns:1fr 1fr;max-width:1180px;margin:0 auto;padding:55px 35px;gap:55px;align-items:center}
+.register-visual{min-height:610px;padding:65px 50px;display:flex;flex-direction:column;justify-content:center;color:white;background:linear-gradient(0deg,#14281fc9,#14281f52),url("../images/christmas-market-hero.png") center/cover;position:relative}
+.register-visual:after{content:"✳";position:absolute;right:30px;bottom:15px;font-size:140px;color:#ffffff16}
+.register-visual h1{font:clamp(48px,6vw,76px)/.95 var(--serif);margin:0 0 25px}
+.register-visual h1 em{font-style:normal;color:#d8b77e}
+.register-visual>p:not(.eyebrow){font-size:14px;line-height:2;color:#f2e7d7}
+.register-date{margin-top:32px;padding-top:18px;border-top:1px solid #ffffff55;font-size:11px;letter-spacing:.16em;color:#e7c991}
+.register-card{background:#fffdf8;padding:45px 48px;box-shadow:0 18px 55px #4d3c2610}
+.register-card h2{font:38px var(--serif);color:var(--green);margin:0}
+.form-intro{font-size:12px;color:#81776b;line-height:1.8;margin:10px 0 28px}
+.form-intro small{font-size:10px;color:#a09383}
+#reservationForm{display:flex;flex-direction:column}
+#reservationForm>label{font-size:11px;font-weight:700;color:#4b453c;margin:15px 0 7px}
+#reservationForm label b{color:var(--red)}
+#reservationForm input:not([type=checkbox]),#reservationForm select{width:100%;height:45px;border:1px solid #e2d9cc;background:#fffefa;padding:0 12px;font:12px var(--sans);color:#4c453b;border-radius:0;outline:none}
+#reservationForm input:focus,#reservationForm select:focus{border-color:#a77b48}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-row label{display:block;font-size:11px;font-weight:700;color:#4b453c;margin:15px 0 7px}
+.check-label{display:flex;align-items:center;gap:7px;margin:23px 0!important;font-size:10px!important;font-weight:400!important}
+.check-label input{accent-color:var(--green)}
+.submit-button{width:100%;margin-top:3px}
+.form-foot{text-align:center;font-size:9px;color:#a09383;margin:17px 0 0}
+.success-layer{position:fixed;inset:0;background:#101810c9;display:none;align-items:center;justify-content:center;padding:20px;z-index:200}
+.success-layer.show{display:flex}
+.success-box{background:#fffdf8;text-align:center;width:min(420px,100%);padding:45px 30px;box-shadow:0 20px 70px #0004}
+.success-icon{font-size:38px;color:#bd985b;margin-bottom:12px}
+.success-box h2{font:29px var(--serif);color:var(--green);margin:0 0 10px}
+.success-box>p:not(.eyebrow){font-size:12px;color:#82786d;margin-bottom:25px}
+@media(max-width:850px){.register-wrap{grid-template-columns:1fr;max-width:620px;padding:30px 20px;gap:25px}.register-visual{min-height:350px;padding:40px}.register-card{padding:35px 28px}}
+@media(max-width:480px){.register-wrap{padding:18px 12px}.register-visual{min-height:300px;padding:30px}.register-card{padding:30px 20px}.register-card h2{font-size:32px}.form-row{grid-template-columns:1fr;gap:0}}

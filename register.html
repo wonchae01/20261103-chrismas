@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사전등록 | CHRISTMAS VILLAGE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body class="register-body">
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">✳</span><span>CHRISTMAS <b>VILLAGE</b><small>WINTER MARKET · 2026</small></span></a>
+    <a class="back-home" href="index.html">← 메인으로 돌아가기</a>
+  </header>
+  <main class="register-wrap">
+    <section class="register-visual">
+      <p class="eyebrow light">YOUR WINTER MEMORY STARTS HERE</p>
+      <h1>VISIT THE<br><em>VILLAGE.</em></h1>
+      <p>반짝이는 겨울 마켓에서<br>특별한 하루를 예약하세요.</p>
+      <div class="register-date">2026. 12. 18 — 12. 25</div>
+    </section>
+    <section class="register-card">
+      <p class="eyebrow">CHRISTMAS VILLAGE · RESERVATION</p>
+      <h2>방문 사전등록</h2>
+      <p class="form-intro">아래 정보를 입력하면 예약 신청이 완료됩니다.<br><small>※ 포트폴리오·웹디자인 연습용 가상 신청 페이지입니다.</small></p>
+      <form id="reservationForm">
+        <label for="visitorName">이름 <b>*</b></label>
+        <input id="visitorName" name="visitorName" type="text" placeholder="이름을 입력해 주세요" required>
+        <label for="visitorPhone">연락처 <b>*</b></label>
+        <input id="visitorPhone" name="visitorPhone" type="tel" placeholder="010-0000-0000" pattern="01[0-9]-?[0-9]{3,4}-?[0-9]{4}" required>
+        <div class="form-row">
+          <div><label for="visitDate">방문 날짜 <b>*</b></label><select id="visitDate" name="visitDate" required><option value="">날짜 선택</option><option>12월 18일 (금)</option><option>12월 19일 (토)</option><option>12월 20일 (일)</option><option>12월 21일 (월)</option><option>12월 22일 (화)</option><option>12월 23일 (수)</option><option>12월 24일 (목)</option><option>12월 25일 (금)</option></select></div>
+          <div><label for="visitTime">방문 시간 <b>*</b></label><select id="visitTime" name="visitTime" required><option value="">시간 선택</option><option>14:00–16:00</option><option>16:00–18:00</option><option>18:00–20:00</option><option>20:00–22:00</option></select></div>
+        </div>
+        <label for="visitorCount">방문 인원 <b>*</b></label>
+        <select id="visitorCount" name="visitorCount" required><option value="">인원 선택</option><option value="1">1명</option><option value="2">2명</option><option value="3">3명</option><option value="4">4명</option><option value="5">5명</option></select>
+        <label class="check-label"><input type="checkbox" id="agree" required> 개인정보 수집 및 이용에 동의합니다. <b>*</b></label>
+        <button class="button button-gold submit-button" type="submit">예약 신청하기 <span>↗</span></button>
+      </form>
+      <p class="form-foot">입력하신 정보는 실제로 저장·전송되지 않습니다.</p>
+    </section>
+  </main>
+
+  <!-- 신청 완료 팝업 -->
+  <div class="success-layer" id="successLayer" aria-hidden="true">
+    <div class="success-box" role="dialog" aria-modal="true" aria-labelledby="successTitle">
+      <div class="success-icon">✳</div>
+      <p class="eyebrow">RESERVATION COMPLETE</p>
+      <h2 id="successTitle">신청이 완료되었습니다!</h2>
+      <p id="successMessage">크리스마스 빌리지에서 만나요.</p>
+      <button class="button button-gold" id="confirmButton">확인</button>
+    </div>
+  </div>
+  <script src="js/register.js"></script>
+</body>
+</html>
