@@ -72,9 +72,10 @@ button{font:inherit;cursor:pointer}
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;}
-.gift-image{
-  background-image: url('/images/gift.jpg');
-}
+.gift-image{  background-image: url('/images/gift.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;}
 .flower-image{background:radial-gradient(circle at 30% 45%,#b74d4a 0 9%,transparent 10%),radial-gradient(circle at 62% 55%,#e2c27c 0 12%,transparent 13%),radial-gradient(circle at 78% 28%,#f2dfb5 0 10%,transparent 11%),linear-gradient(135deg,#3c2929,#8a5143 60%,#d1ad7b)}
 .market-image:after{inset:18px;border:1px solid #ffffff55}
 .image-number{position:absolute;top:24px;left:27px;color:#fff;font:14px var(--serif);z-index:1}
